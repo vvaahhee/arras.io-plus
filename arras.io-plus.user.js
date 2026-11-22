@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         arras.io+ loader
 // @namespace    https://github.com/vvaahhee/arras.io-plus
-// @version      2.0.0
+// @version      2.0.1
 // @description  Loads arras.io+ at arras.io/+
 // @author       vahe
 // @icon         https://raw.githubusercontent.com/vvaahhee/arras.io-plus/main/icon.png
@@ -68,13 +68,13 @@
       const saved = await load();
       if (!saved || !newer(saved.version, running)) {
         const version = await latest();
-        if (!newer(version, running)) return setTimeout(update, 600000, running);
+        if (!newer(version, running)) return setTimeout(update, 60000, running);
         await save(await download(version));
       }
       document.documentElement.setAttribute('data-update-ready', '');
       dispatchEvent(new Event('update-ready'));
     } catch {
-      setTimeout(update, 600000, running);
+      setTimeout(update, 60000, running);
     }
   };
 

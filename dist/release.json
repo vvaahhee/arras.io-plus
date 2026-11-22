@@ -1,13 +1,13 @@
 {
- "version": "2.0.0",
+ "version": "2.0.1",
  "page": {
-  "file": "page-2.0.0.html",
+  "file": "page-2.0.1.html",
   "sha256": "9cd81b6bf9c4bb7e917582ae87faeb6a8179f148afb61465fd4e5dbc70b947c6",
-  "gz": "page-2.0.0.html.gz"
+  "gz": "page-2.0.1.html.gz"
  },
  "wasm": {
-  "file": "app-2.0.0.wasm",
-  "sha256": "97f32a50e02c18208d8888832e1e0fc31465175bef4ecaba3975f3b545d93364",
-  "gz": "app-2.0.0.wasm.gz"
+  "file": "app-2.0.1.wasm",
+  "sha256": "f14113f0024ab8b720a22f02397c76a0cc3d6fa288f9b2acc48e4180ef1bd135",
+  "gz": "app-2.0.1.wasm.gz"
  }
 }
