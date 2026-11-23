@@ -1,3 +1,6 @@
+# Update [2026-11-24]
+- Removed Aim Line and Highlight Dead Ends in the name of justice.
+
 # Update [2026-11-23]
 - Mobile fixes and improvements.
 - Live Menu Preview is now off by default.
