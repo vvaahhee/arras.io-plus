@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         arras.io+ loader
 // @namespace    https://github.com/vvaahhee/arras.io-plus
-// @version      2.0.1
+// @version      2.0.2
 // @description  Loads arras.io+ at arras.io/+
 // @author       vahe
 // @icon         https://raw.githubusercontent.com/vvaahhee/arras.io-plus/main/icon.png
@@ -11,16 +11,33 @@
 // @noframes
 // @grant        GM_xmlhttpRequest
 // @connect      raw.githubusercontent.com
-// @downloadURL  https://raw.githubusercontent.com/vvaahhee/arras.io-plus/main/arras.io-plus.user.js
+// @downloadURL  none
+// @updateURL    none
 // ==/UserScript==
 
 (() => {
   'use strict';
   const DIST = 'https://raw.githubusercontent.com/vvaahhee/arras.io-plus/main/dist/';
 
+  const LOCK = [
+    "default-src 'none'",
+    "script-src 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com",
+    "worker-src blob:",
+    "style-src 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src https://fonts.gstatic.com https://cdn.jsdelivr.net/npm/@fontsource/noto-emoji@5.3.2/ " +
+      'https://cdn.jsdelivr.net/npm/twemoji-colr-font@15.0.3/',
+    'img-src data: blob:',
+    'media-src blob:',
+    'connect-src https://arras.io:* wss://arras.io:* https://*.arras.io:* wss://*.arras.io:* https://*.uvwx.xyz:* ' +
+      'wss://*.uvwx.xyz:* https://raw.githubusercontent.com/vvaahhee/arras.io-plus/main/CHANGELOG.md blob: data:',
+    'frame-src https://challenges.cloudflare.com',
+    "base-uri 'none'",
+    "form-action 'none'",
+  ].join('; ');
+
   const write = (html) => {
     document.open();
-    document.write(html);
+    document.write(`<!DOCTYPE html><meta http-equiv="Content-Security-Policy" content="${LOCK}">` + html);
     document.close();
   };
   write('<!DOCTYPE html><html style="background:#484848"><head><meta charset="utf-8"></head>' +
