@@ -1,4 +1,8 @@
 # Update [2026-11-23]
+- Mobile fixes and improvements.
+- Live Menu Preview is now off by default.
+
+# Update [2026-11-23]
 - arras.io+ is now public! New repo: https://github.com/vvaahhee/arras.io-plus
 - If you have the old script, remove it and install arras.io+ from the link above.
 - Added a Player Bars section to the HUD tab.
