@@ -1,4 +1,7 @@
 # Update [2026-11-25]
+- Font fix.
+
+# Update [2026-11-25]
 - Fixed some issues with replays (hopefully).
 
 # Update [2026-11-24]
