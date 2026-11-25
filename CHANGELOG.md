@@ -1,3 +1,6 @@
+# Update [2026-11-25]
+- Fixed some issues with replays (hopefully).
+
 # Update [2026-11-24]
 - Removed Aim Line and Highlight Dead Ends in the name of justice.
 
