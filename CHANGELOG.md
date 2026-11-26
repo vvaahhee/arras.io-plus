@@ -1,3 +1,10 @@
+# Update [2026-11-26]
+- Fixed Movement Timeout not working like the original client.
+- Replays that fail to load now show an error instead of loading forever.
+- Highlight Your Projectiles is more accurate.
+- Fixed different saves showing the same thumbnail.
+- Added a Notifications section to the HUD tab.
+
 # Update [2026-11-25]
 - Font fix.
 
