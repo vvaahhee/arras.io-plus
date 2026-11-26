@@ -1,4 +1,7 @@
 # Update [2026-11-26]
+- Added Extrapolation to the Performance tab.
+
+# Update [2026-11-26]
 - Fixed Movement Timeout not working like the original client.
 - Replays that fail to load now show an error instead of loading forever.
 - Highlight Your Projectiles is more accurate.
