@@ -1,4 +1,8 @@
 # Update [2026-11-27]
+- Fixed US East servers in the server list.
+- Extrapolation improvements and fixes.
+
+# Update [2026-11-27]
 - Added Spytab Mode to the Game tab.
 
 # Update [2026-11-26]
