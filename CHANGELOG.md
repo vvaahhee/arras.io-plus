@@ -1,3 +1,6 @@
+# Update [2026-11-27]
+- Added Spytab Mode to the Game tab.
+
 # Update [2026-11-26]
 - Added Extrapolation to the Performance tab.
 
